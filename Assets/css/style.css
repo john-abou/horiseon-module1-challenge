@@ -1,3 +1,4 @@
+/* Universal/Body Styling */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,24 +9,23 @@ body {
     background-color: #d9dcd6;
 }
 
-/* Removed the "." from all tags that had class header as the class "header" was removed and we are now targeting the semantic element "header" */
+
+/* Header CSS styling */
+/* Removed the "." from all tags that had a class "header" as it was removed and we are now targeting the semantic element "header" */
+/* Replaced the seo class with an ID as there is only one element */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
-/* Replaced the seo class with an ID as there is only one element */
 header h1 #seo {
     color: #d9dcd6;
 }
-
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -33,25 +33,26 @@ header nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
 header nav ul {
     list-style-type: none;
 }
-
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+
+/* Base font styling */
 p {
     font-size: 16px;
 }
 
+
+/* Image CSS Styling */
 /* Removed background properties from the img-meeting class and added the object-fit to achieve the same effect*/
 #team-img {
     height: 800px;
@@ -59,24 +60,43 @@ p {
     margin-bottom: 25px;
     object-fit: cover; 
 }
-
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
-.content {
+
+/* Main CSS styling */
+/* Consolidated the class selectors for all section elements under the main element into one class  */ 
+#content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+#content-list {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+#content-list img {
+    max-height: 200px;
+}
+#content-list h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
 
-.sidebar {
+
+/* Sidebar CSS styling */
+/* Consolidated the class selectors for all section elements under the aside element into one class */
+#sidebar {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -86,50 +106,32 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-/* Consolidated all class selectors for HTML elements under the aside section with one class "benefit-list" */
 .sidebar-item {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
 .sidebar-item h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
 .sidebar-item img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/* Consolidated all class selectors for HTML elements under the main section with one class  */ 
-.content-list {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-.content-list img {
-    max-height: 200px;
-}
-
-.content-list h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* Footer CSS Styling */
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
 .footer h2 {
     font-size: 20px;
 }
+
+
+/* Responsive  CSS Styling */
+
